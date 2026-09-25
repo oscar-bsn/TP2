@@ -8,13 +8,23 @@ package pkg01.tp2;
  *
  * @author obesnier
  */
+import java.util.Scanner ;
 public class TP2 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // test github
+        /* TP 02 */
+        /* Exo 1 */ 
+        Scanner mp = new Scanner(System.in);
+        System.out.println("Saisir le mot de passe :");
+        String a = mp.next();
+        if(!a.equals("admin123")){
+        while(!a.equals("admin123")){
+            System.out.println("Resaisir le mot de passe :");
+            a= mp.next();
+        }   
     }
-    
+    }
 }
